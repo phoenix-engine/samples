@@ -1,32 +1,30 @@
-# Prerequisites
-*.d
+cmake_install.cmake
+CMakeCache.txt
+CMakeFiles/
+build/*
+!build/.gitkeep
+lib/
+!src/lib
+target/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+*.sw[nop]
+*~
+\#*
+*#
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
 
-# Executables
-*.exe
-*.out
-*.app
+*.opensdf
+*.sdf
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.filters
+Debug/
+obj/
+*.psess
+*.vspx
+.vs
+
+.DS_Store
