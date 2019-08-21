@@ -1,0 +1,22 @@
+﻿{
+  "configurations": [
+    {
+      "name": "Phoenix Samples VS 2019 (Debug)",
+      "generator": "Ninja",
+      "buildRoot": "${workspaceRoot}\\build",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "cmakeCommandArgs": "",
+      "variables": [],
+      "configurationType": "Debug"
+    },
+    {
+      "name": "Phoenix Samples VS 2019 (Release)",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "buildRoot": "${workspaceRoot}\\build",
+      "cmakeCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "variables": []
+    }
+  ]
+}

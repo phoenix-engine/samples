@@ -1,0 +1,3 @@
+[submodule "dep/phoenix"]
+	path = dep/phoenix
+	url = https://github.com/phoenix-engine/phoenix.git
