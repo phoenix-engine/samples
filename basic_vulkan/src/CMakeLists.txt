@@ -12,7 +12,7 @@ target_include_directories(${APP_NAME} PUBLIC
   ${CMAKE_CURRENT_LIST_DIR}/sample
 )
 
-if(WIN32)
+if(NOT(APPLE))
   target_link_libraries(${APP_NAME}
 	Phoenix
 	SDL2main
@@ -25,7 +25,7 @@ if(WIN32)
   )
 else()
   target_link_libraries(${APP_NAME} Phoenix)
-endif(WIN32)
+endif(NOT(APPLE))
 
 set_property(TARGET ${APP_NAME} PROPERTY CXX_STANDARD 17)
 set_property(TARGET ${APP_NAME} PROPERTY CXX_STANDARD_REQUIRED ON)

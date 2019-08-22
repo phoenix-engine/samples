@@ -25,6 +25,7 @@ macro_ensure_out_of_source_build("${PROJECT_NAME} requires an out of source buil
 set(Sample_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
 set(Sample_TARGET_DIR  ${CMAKE_BINARY_DIR}/target)
 set(Sample_STATIC_LIB_DIR ${CMAKE_BINARY_DIR}/lib)
+
 # Shared libs should be shipped with the target executable.
 set(Sample_SHARED_LIB_DIR ${Sample_TARGET_DIR}/lib)
 
