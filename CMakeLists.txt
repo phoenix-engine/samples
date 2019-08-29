@@ -19,7 +19,11 @@ set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
 
 # disallow in-source build
 include(MacroEnsureOutOfSourceBuild)
-macro_ensure_out_of_source_build("${PROJECT_NAME} requires an out of source build. Please create a separate build directory and run 'cmake /path/to/${PROJECT_NAME} [options]' there.")
+macro_ensure_out_of_source_build(
+  "${PROJECT_NAME} requires an out of "
+  "source build. Please create a separate build directory and run "
+  "`cmake /path/to/${PROJECT_NAME} [options]` there."
+)
 
 # global variables
 set(Sample_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
@@ -36,3 +40,12 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${Sample_STATIC_LIB_DIR})
 
 add_subdirectory(dep)
 add_subdirectory(basic_vulkan)
+
+# If the user didn't set the build type, tell them debugging may fail.
+if(NOT(CMAKE_BUILD_TYPE))
+  message(
+    WARNING
+    "Build type was not set.  To export debugging symbols, set the "
+    "build type with `-DCMAKE_BUILD_TYPE=Debug`."
+  )
+endif(NOT(CMAKE_BUILD_TYPE))
