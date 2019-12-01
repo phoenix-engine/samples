@@ -20,6 +20,7 @@ if(NOT(APPLE))
 	Error
 	SDLUtil
 	SDLWindow
+	SDLScene
 	SDLVKRenderer
 	SDLInput
   )

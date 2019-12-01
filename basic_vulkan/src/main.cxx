@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 #include <thread>
 
 #include "sample.hpp"
@@ -12,13 +12,13 @@ int main(int argc, char* argv[]) {
 
     try {
 	using namespace phx_sdl;
-	auto w = Window("SampleVulkanWindow", SDL_WINDOWPOS_CENTERED,
+	auto w = Window("BasicVulkan", SDL_WINDOWPOS_CENTERED,
 	                SDL_WINDOWPOS_CENTERED, 1024, 768,
 	                VKRenderer<debugging>::window_flags());
 
 	// TODO: Move width and height into renderer API?
 	// TODO: Make error API visible to non-dev users.
-	VKRenderer<debugging> r(w);
+	VKRenderer<debugging> r(std::move(w));
 	gfx::extent           e = r.extent();
 	gfx::Graphics         g(std::move(r), e.width, e.height);
 	input::Input          inp(&input::simple);
