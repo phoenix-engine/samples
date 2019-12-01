@@ -40,6 +40,7 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${Sample_STATIC_LIB_DIR})
 
 add_subdirectory(dep)
 add_subdirectory(basic_vulkan)
+add_subdirectory(basic_world2d)
 
 # If the user didn't set the build type, tell them debugging may fail.
 if(NOT(CMAKE_BUILD_TYPE))

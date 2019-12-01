@@ -1,5 +1,12 @@
 # Phoenix Samples
 
+Sections:
+
+- [Setup](#setup)
+- [Samples](#samples)
+
+## Setup
+
 To build the Phoenix samples, you need to have [CMake](https://cmake.org/)
 installed.
 
@@ -26,3 +33,8 @@ $ ninja
 
 The executables for each sample can then be found in the `build/target`
 directory.
+
+## Samples
+
+- [BasicVulkan](basic_vulkan/README.md)
+- [BasicWorld2D](basic_world2d/README.md)
