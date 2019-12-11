@@ -3,7 +3,7 @@
 
 #include <phx_sdl/scene.hpp>
 
-#include "sample.hpp"
+#include "pushconst.hpp"
 
 using namespace phx_sdl;
 
@@ -18,7 +18,7 @@ auto setup_phoenix() {
       Window("BasicWorld2D", SDL_WINDOWPOS_CENTERED,
              SDL_WINDOWPOS_CENTERED, 1024, 768,
              VKRenderer<debugging>::window_flags()),
-      DefaultScenes::world2d);
+      DefaultScenes::pushconstants);
 
     auto e = r.extent();
 
