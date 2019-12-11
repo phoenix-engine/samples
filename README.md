@@ -37,4 +37,4 @@ directory.
 ## Samples
 
 - [BasicVulkan](basic_vulkan/README.md)
-- [BasicWorld2D](basic_world2d/README.md)
+- [BasicPushConstants](basic_pushconstants/README.md)
