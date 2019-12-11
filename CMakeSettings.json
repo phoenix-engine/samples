@@ -3,7 +3,7 @@
     {
       "name": "Phoenix Samples VS 2019 (Debug)",
       "generator": "Ninja",
-      "buildRoot": "${workspaceRoot}\\build",
+      "buildRoot": "${workspaceRoot}\\build_msvc",
       "inheritEnvironments": [ "msvc_x64" ],
       "cmakeCommandArgs": "",
       "variables": [],
@@ -13,7 +13,7 @@
       "name": "Phoenix Samples VS 2019 (Release)",
       "generator": "Ninja",
       "configurationType": "Release",
-      "buildRoot": "${workspaceRoot}\\build",
+      "buildRoot": "${workspaceRoot}\\build_msvc_release",
       "cmakeCommandArgs": "",
       "inheritEnvironments": [ "msvc_x64" ],
       "variables": []

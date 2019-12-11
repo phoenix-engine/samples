@@ -1,15 +1,14 @@
-project(VulkanWindow CXX C)
+project(BasicPushConstants CXX C)
 
 set(main_SRCS
-  sample/sample.cxx
+  pushconst/pushconst.cxx
   main.cxx
 )
 
 add_executable(${APP_NAME} ${GUI_TYPE} ${main_SRCS})
 
 target_include_directories(${APP_NAME} PUBLIC
-  ${Phoenix_INCLUDE_DIR}
-  ${CMAKE_CURRENT_LIST_DIR}/sample
+  ${CMAKE_CURRENT_LIST_DIR}/pushconst
 )
 
 if(NOT(APPLE))

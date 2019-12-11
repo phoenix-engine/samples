@@ -1,4 +1,4 @@
-set(APP_NAME "BasicVulkan")
+set(APP_NAME "BasicPushConstants")
 
 set(APP_V_MAJOR "0")
 set(APP_V_MINOR "0")
