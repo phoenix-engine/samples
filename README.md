@@ -36,5 +36,5 @@ directory.
 
 ## Samples
 
-- [BasicVulkan](basic_vulkan/README.md)
-- [BasicPushConstants](basic_pushconstants/README.md)
+- [BasicVulkan](basic_vulkan)
+- [BasicPushConstants](basic_pushconstants)
