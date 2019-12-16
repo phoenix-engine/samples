@@ -36,7 +36,7 @@ namespace sample {
 		    using mt        = decltype(mets);
 
 		    std::cerr << "Frame time: " << std::setprecision(3)
-		              << std::chrono::duration_cast<mt::ms>(
+		              << std::chrono::duration_cast<typename mt::ms>(
 		                   mets.avg_frame_time)
 		                   .count()
 		              << "ms" << std::endl;
